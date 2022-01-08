@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExploraViewActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="48dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/button_left"
+        android:contentDescription="@string/boton_left"
+        app:layout_constraintBottom_toBottomOf="@+id/specieImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/specieImage" />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="48dp"
+        android:layout_height="94dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_right"
+        android:contentDescription="@string/boton_right"
+        app:layout_constraintBottom_toBottomOf="@+id/specieImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/specieImage" />
+
+    <TextView
+        android:id="@+id/animalDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_text_explora"
+        app:layout_constraintEnd_toEndOf="@+id/bg_text_explora"
+        app:layout_constraintStart_toStartOf="@+id/bg_text_explora"
+        app:layout_constraintTop_toTopOf="@+id/bg_text_explora" />
+
+    <TextView
+        android:id="@+id/title_image"
+        android:layout_width="300dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:translationZ="3dp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_title_explora"
+        app:layout_constraintEnd_toEndOf="@+id/bg_title_explora"
+        app:layout_constraintStart_toStartOf="@+id/bg_title_explora"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bg_text_explora"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bg_explora_button"
+        android:contentDescription="Texto background explora" />
+
+    <ImageView
+        android:id="@+id/bg_title_explora"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_v"
+        android:contentDescription="Título background explora" />
+
+    <ImageView
+        android:id="@+id/specieImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/donde_se_almacena_la_imagen"
+        app:layout_constraintBottom_toTopOf="@+id/bg_text_explora"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintStart_toEndOf="@+id/left"
+        app:layout_constraintTop_toBottomOf="@+id/bg_title_explora" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingQRButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/lectorqr_button"
+        android:focusable="true" />
+
+</android.support.constraint.ConstraintLayout>

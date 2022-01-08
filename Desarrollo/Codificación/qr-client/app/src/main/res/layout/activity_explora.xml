@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    android:fitsSystemWindows="true">
+
+
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/ama_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/explora_amaz_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/explora_amaz_button_tucan"
+            android:layout_width="113dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/tucan_del_boton_amazonia_de_explora"
+            android:translationZ="2dp"
+            app:layout_constraintStart_toStartOf="@+id/ama_button"
+            app:layout_constraintTop_toTopOf="@+id/ama_button"
+            app:srcCompat="@drawable/explora_amazonas_button_tucan" />
+
+
+        <TextView
+            android:id="@+id/amazoniaText"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/zone_amazonia_title"
+            android:textColor="#c8a500"
+            android:textSize="30sp"
+            android:translationZ="3dp"
+            app:layout_constraintEnd_toEndOf="@+id/ama_button"
+            app:layout_constraintStart_toEndOf="@+id/explora_amaz_button_tucan"
+            app:layout_constraintTop_toTopOf="@+id/ama_button" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/zone_amazonia_desc"
+            android:textSize="12sp"
+            android:translationZ="3dp"
+            app:layout_constraintEnd_toEndOf="@+id/amazoniaText"
+            app:layout_constraintStart_toStartOf="@+id/ama_button"
+            app:layout_constraintTop_toBottomOf="@+id/amazoniaText" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/mad_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/explora_mad_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/explora_mad_button_mono"
+            android:layout_width="113dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+
+
+            android:translationZ="2dp"
+            app:layout_constraintStart_toStartOf="@+id/mad_button"
+            app:layout_constraintTop_toTopOf="@+id/mad_button"
+            app:srcCompat="@drawable/explora_madagascar_mono"
+            android:contentDescription="@string/mono_del_boton_de_explora" />
+
+
+        <TextView
+            android:id="@+id/madagascarText"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/zone_madagascar_title"
+            android:textColor="#59000a"
+            android:textSize="30sp"
+            android:translationZ="3dp"
+            app:layout_constraintEnd_toEndOf="@+id/mad_button"
+            app:layout_constraintStart_toEndOf="@+id/explora_mad_button_mono"
+            app:layout_constraintTop_toTopOf="@+id/mad_button" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/zone_madagascar_desc"
+            android:textSize="12sp"
+            android:translationZ="3dp"
+            app:layout_constraintEnd_toEndOf="@+id/madagascarText"
+            app:layout_constraintStart_toStartOf="@+id/mad_button"
+            app:layout_constraintTop_toBottomOf="@+id/madagascarText" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/ip_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/explora_ip_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/explora_ip_button_pez"
+            android:layout_width="113dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+
+
+            android:translationZ="2dp"
+            app:layout_constraintStart_toStartOf="@+id/ip_button"
+            app:layout_constraintTop_toTopOf="@+id/ip_button"
+            app:srcCompat="@drawable/explora_indopacifico_pez"
+            android:contentDescription="@string/pez_del_boton_de_explora" />
+
+
+        <TextView
+            android:id="@+id/indopacificoText"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/zone_ip_title"
+            android:textColor="#00594f"
+            android:textSize="30sp"
+            android:translationZ="3dp"
+            app:layout_constraintEnd_toEndOf="@+id/ip_button"
+            app:layout_constraintStart_toEndOf="@+id/explora_ip_button_pez"
+            app:layout_constraintTop_toTopOf="@+id/ip_button" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/zone_ip_desc"
+            android:textSize="12sp"
+            android:translationZ="3dp"
+            app:layout_constraintEnd_toEndOf="@+id/indopacificoText"
+            app:layout_constraintStart_toStartOf="@+id/ip_button"
+            app:layout_constraintTop_toBottomOf="@+id/indopacificoText" />
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
